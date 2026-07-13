@@ -14,13 +14,27 @@ public:
     vector<int>ans;
     vector<int> preorderTraversal(TreeNode* root) {
        
-        if(root == NULL) return ans;
+        // if(root == NULL) return ans;
 
-        ans.push_back(root->val);
+        // ans.push_back(root->val);
         
-        preorderTraversal(root->left);
-        preorderTraversal(root->right);
+        // preorderTraversal(root->left);
+        // preorderTraversal(root->right);
+        // return ans;
+
+        // iterative solution
+        stack<TreeNode*> st;
+        st.push(root);
+        if(root == NULL)return ans;
+        while(!st.empty()){
+            TreeNode* node = st.top();
+            st.pop();
+        
+            if(node->right) st.push(node->right);
+            if(node->left) st.push(node->left);
+
+            ans.push_back(node->val);
+        }
         return ans;
     }
-  
 };
