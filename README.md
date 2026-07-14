@@ -226,3 +226,11 @@ Solutions organized by topic.
 - [String To Integer (Atoi)](uncategorized/string-to-integer-(atoi))
 - [Sum Of Integers With Maximum Digit Range](uncategorized/sum-of-integers-with-maximum-digit-range)
 - [Unique Middle Element](uncategorized/unique-middle-element)
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Enumeration
+|  |
+| ------- |
+| [1291-sequential-digits](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1291-sequential-digits) |
+<!---LeetCode Topics End-->
