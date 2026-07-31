@@ -237,16 +237,20 @@ Solutions organized by topic.
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0547-number-of-provinces) |
+| [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0547-number-of-provinces) |
+| [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
 ## Union-Find
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0547-number-of-provinces) |
+| [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
 ## Graph Theory
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0547-number-of-provinces) |
+| [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
 <!---LeetCode Topics End-->
