@@ -243,6 +243,7 @@ Solutions organized by topic.
 | [0802-find-eventual-safe-states](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0841-keys-and-rooms) |
 | [1971-find-if-path-exists-in-graph](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1971-find-if-path-exists-in-graph) |
+| [3310-remove-methods-from-project](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/3310-remove-methods-from-project) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -253,6 +254,7 @@ Solutions organized by topic.
 | [0802-find-eventual-safe-states](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0841-keys-and-rooms) |
 | [1971-find-if-path-exists-in-graph](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1971-find-if-path-exists-in-graph) |
+| [3310-remove-methods-from-project](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/3310-remove-methods-from-project) |
 ## Union-Find
 |  |
 | ------- |
@@ -269,6 +271,7 @@ Solutions organized by topic.
 | [0802-find-eventual-safe-states](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0841-keys-and-rooms) |
 | [1971-find-if-path-exists-in-graph](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1971-find-if-path-exists-in-graph) |
+| [3310-remove-methods-from-project](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/3310-remove-methods-from-project) |
 ## Topological Sort
 |  |
 | ------- |
