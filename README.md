@@ -243,6 +243,7 @@ Solutions organized by topic.
 | [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
 | [0802-find-eventual-safe-states](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0841-keys-and-rooms) |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1971-find-if-path-exists-in-graph](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1971-find-if-path-exists-in-graph) |
 | [3310-remove-methods-from-project](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/3310-remove-methods-from-project) |
 ## Breadth-First Search
@@ -255,6 +256,7 @@ Solutions organized by topic.
 | [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
 | [0802-find-eventual-safe-states](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0841-keys-and-rooms) |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1971-find-if-path-exists-in-graph](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1971-find-if-path-exists-in-graph) |
 | [3310-remove-methods-from-project](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/3310-remove-methods-from-project) |
 ## Union-Find
@@ -262,6 +264,7 @@ Solutions organized by topic.
 | ------- |
 | [0547-number-of-provinces](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0547-number-of-provinces) |
 | [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1971-find-if-path-exists-in-graph](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1971-find-if-path-exists-in-graph) |
 ## Graph Theory
 |  |
@@ -273,6 +276,7 @@ Solutions organized by topic.
 | [0785-is-graph-bipartite](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0785-is-graph-bipartite) |
 | [0802-find-eventual-safe-states](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/0841-keys-and-rooms) |
+| [1319-number-of-operations-to-make-network-connected](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1971-find-if-path-exists-in-graph](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/1971-find-if-path-exists-in-graph) |
 | [3310-remove-methods-from-project](https://github.com/hk-16-coder/DSA-Leetcode/tree/master/3310-remove-methods-from-project) |
 ## Topological Sort
