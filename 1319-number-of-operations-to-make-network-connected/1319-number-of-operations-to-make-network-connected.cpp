@@ -1,29 +1,76 @@
-class Solution {
+class DSU{
 public:
-    void dfs(int node , vector<vector<int>>& adj , vector<int>& vis){
-        vis[node] = 1;
-        for(auto it : adj[node]){
-            if(!vis[it]){
-               dfs(it,adj,vis);
-            }
+    vector<int> parent,rank,size;
+    DSU(int n){
+        parent.resize(n+1);
+        rank.resize(n+1,0);
+        size.resize(n+1,1);
+
+        for(int i = 0 ; i<=n ; i++){
+            parent[i] = i;
         }
     }
+
+    int findUpar(int node){
+        if(parent[node] == node) return node;
+
+        return parent[node] = findUpar(parent[node]);
+    }
+
+    void unionByRank(int u , int v){
+        int ulp_u = findUpar(u);
+        int ulp_v = findUpar(v);
+
+        if(ulp_u == ulp_v) return;
+        if(rank[ulp_u] < rank[ulp_v]){
+            parent[ulp_u] = ulp_v;
+        }
+        else if(rank[ulp_u] > rank[ulp_v]){
+              parent[ulp_v] = ulp_u;
+        }
+
+        else{
+            parent[ulp_u] = ulp_v;
+            rank[ulp_v]++;
+        }
+    }
+
+    void unionBySize(int u , int v){
+        int ulp_u = findUpar(u);
+        int ulp_v = findUpar(v);
+         
+        if(ulp_u == ulp_v) return;
+        if(size[ulp_u] < size[ulp_v]){
+            parent[ulp_u] = ulp_v;
+            size[ulp_v]+=size[ulp_u];
+        }
+        else{
+            parent[ulp_v] = ulp_u;
+            size[ulp_u]+=size[ulp_v];
+        }
+    }
+};
+
+class Solution {
+public:
     int makeConnected(int n, vector<vector<int>>& connections) {
-        int V  = connections.size();
-        if(n-1>V) return -1;
-        vector<vector<int>> adj(n);
+        DSU ds(n);
+        int extra_edges = 0;
         for(auto it : connections){
-            adj[it[0]].push_back(it[1]);
-            adj[it[1]].push_back(it[0]);
+            int u = it[0];
+            int v = it[1];
+            if(ds.findUpar(u) == ds.findUpar(v)) extra_edges++;
+            else{
+                ds.unionBySize(u,v);
+            }
         }
-        vector<int> vis(n,0);
-        int cnt = 0;
+        
+        int nC = 0; // number of connected components
         for(int i = 0 ; i<n ; i++){
-                if(!vis[i]){
-                    cnt++;
-                    dfs(i,adj,vis);
-                }
+            if(ds.parent[i] == i) nC++;
         }
-        return cnt-1;
+        // ans = nC-1
+        if(extra_edges >= nC-1) return nC-1;
+        return -1;
     }
 };
