@@ -1,11 +1,13 @@
 class Solution {
 public:
+    vector<vector<int>> move = {{-2,-1} , {-2,1} , {2,-1} , {2,1} , {-1,-2} , {-1,2} , {1,-2} , {1,2}};
+    
     double f(int moves , int row , int col , int n , vector<vector<vector<double>>>& dp){
         if(row<0 || row>=n || col<0 || col>=n) return 0;
         if(moves == 0) return 1;
         
         if(dp[moves][row][col] != -1) return dp[moves][row][col]; 
-        vector<vector<int>> move = {{-2,-1} , {-2,1} , {2,-1} , {2,1} , {-1,-2} , {-1,2} , {1,-2} , {1,2}};
+        
         
         double prob = 0;
         for(int i = 0 ; i<8 ; i++){
