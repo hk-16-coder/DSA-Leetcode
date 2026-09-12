@@ -1,39 +1,32 @@
 class Solution {
 public:
     vector<int> largestDivisibleSubset(vector<int>& nums) {
-        int n = nums.size();
-        vector<vector<int>> dp(n+1 , vector<int>(n+1));
         sort(nums.begin() , nums.end());
+        int n = nums.size();
 
-        for(int idx = n-1 ; idx>=0 ; idx--){
-            for(int prev_idx = -1 ; prev_idx < idx ; prev_idx++){
-                int notTake = dp[idx+1][prev_idx+1];
-                int take = 0;
-                if(prev_idx == -1 ||  nums[idx] % nums[prev_idx] == 0){
-                    take = 1 + dp[idx+1][idx+1];
+        vector<int> dp(n,1) , hash(n);
+        int maxi = 1 , lastIdx = 0;
+        for(int i = 0 ; i<n ; i++){
+            hash[i] = i;
+            for(int j = 0 ; j<i ; j++){
+                if(nums[i] % nums[j] == 0 && dp[i] < dp[j] + 1){
+                    dp[i] = dp[j] + 1;
+                    hash[i] = j;
                 }
-
-                dp[idx][prev_idx+1] = max(take , notTake);
+            }
+            if(dp[i] > maxi){
+                maxi = dp[i];
+                lastIdx = i;
             }
         }
-        int max_len = dp[0][0];
+
         vector<int> ans;
-        int idx = 0;
-        int prev_idx = -1;
-
-        while(idx<n){
-            int notTake = dp[idx+1][prev_idx+1];
-            int take = 0;
-
-            if(prev_idx == -1 ||  nums[idx] % nums[prev_idx] == 0){
-                take = 1 + dp[idx+1][idx+1];
-            }
-            if(take > notTake){
-                ans.push_back(nums[idx]);
-                prev_idx = idx;
-            }
-            idx++;
+        while(hash[lastIdx] != lastIdx){
+            ans.push_back(nums[lastIdx]);
+            lastIdx = hash[lastIdx];
         }
+        
+        ans.push_back(nums[lastIdx]);
         return ans;
     }
 };
