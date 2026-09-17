@@ -5,10 +5,10 @@ public:
         if(dp[idx] != -1) return dp[idx];
 
         int maxi = 0;
+         int max_val = 0;
         for(int cut = idx ; cut<idx+k ; cut++){
             if(cut == arr.size()) break;
-            int max_val = 0;
-            for(int i = idx ; i<=cut ; i++) max_val = max(max_val , arr[i]);
+            max_val = max(max_val , arr[cut]);
 
             int sum = (cut - idx + 1) * max_val + f(cut+1 , k , arr , dp);
             maxi = max(maxi , sum);
